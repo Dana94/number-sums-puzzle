@@ -1,21 +1,34 @@
+import Button from './components/Button/Button';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <div className="btns">
-        <button>A</button>
-        <button>B</button>
-        <button>C</button>
-      </div>
+      <div className="board">
+        <Button />
+        <div className="side"></div>
+        <Button />
+        <div className="side"></div>
+        <Button />
+        <div className="side"></div>
+        <Button />
 
-      <div className="nums">
-        <div>
-          3
-        </div>
-        <div>
-          4
-        </div>
+        <div className="side"></div>
+        <div className="num">2</div>
+        <div className="side"></div>
+        <div className="num">1</div>
+        <div className="side"></div>
+        <div className="num">0</div>
+        <div className="side"></div>
+
+        <Button />
+        <div className="side"></div>
+        <Button />
+        <div className="side"></div>
+        <Button />
+        <div className="side"></div>
+        <Button />
       </div>
     </div>
   );

@@ -11,30 +11,35 @@
 
 .App {
     width: 200px;
+    margin: 0 auto;
     margin-top: 3rem;
 }
 
-.App > div > div {
-    display: inline;
-    border: 1px solid;
+.App .board {
+    display: grid;
+    grid-template-columns: 20px 50px 20px 50px 20px 50px 20px;
+    grid-template-rows: 20px 50px 20px;
 }
 
-.App > div.btns {
-    display: flex;
-    justify-content: space-between;
-}
+.side {
+    width: 100%;
+    background-color: rgb(209, 109, 209);
 
-.App > div.nums {
-    display: flex;
-    justify-content: space-around;
-}
+    border-radius: 10px;
 
-.App > div.nums div {
-    width: 48%;
 }
 
 button {
-    background-color: white;
-    border: 1px solid;
     border-radius: 50%;
+    border: 1px solid;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
