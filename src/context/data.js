@@ -1,7 +1,9 @@
 
 
-const level1 = [
+export const level1 = [
   [2, 1, 0],
   [2, 2, 1],
   [4, 3, 2]
 ]
+
+

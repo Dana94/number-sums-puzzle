@@ -1,8 +1,14 @@
+import {useContext} from 'react';
+import {GameContext} from './context/game-context';
+
 import Button from './components/Button/Button';
 
 import './App.css';
 
 function App() {
+
+  const gameContext = useContext(GameContext);
+
   return (
     <div className="App">
       <div className="board">
@@ -30,6 +36,7 @@ function App() {
         <div className="side"></div>
         <Button />
       </div>
+      {/* {gameContext.board} */}
     </div>
   );
 }
